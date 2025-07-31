@@ -12,4 +12,8 @@ lint:
 
 gendiff:
 	node bin/gendiff.js
+
+test:
+	npx jest --watch
+
 .PHONY: test
