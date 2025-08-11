@@ -6,6 +6,8 @@ link:
 
 test:
 	npm test
+test-coverage:
+	npm test -- --coverage
 
 lint:
 	npx eslint .
@@ -13,7 +15,7 @@ lint:
 gendiff:
 	node bin/gendiff.js
 
-test:
+test-watch:
 	npx jest --watch
 
 .PHONY: test
