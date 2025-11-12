@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url';
 export default function parse(filepath) {
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = path.dirname(__filename);
-  const fullPath = path.resolve(__dirname,'..','..', filepath);
+  const fullPath = path.resolve(__dirname,'..', filepath);
   const content = fs.readFileSync(fullPath,'utf-8')     
   let ext = path.extname(filepath);
   if (ext === '.json' ){
