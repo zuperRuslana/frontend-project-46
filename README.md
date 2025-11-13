@@ -1,2 +1,16 @@
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/zuperRuslana/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/zuperRuslana/frontend-project-46/actions)
+[![Actions Status](https://github.com/zuperRuslana/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/zuperRuslana/frontend-project-46/actions)  
+
+## 📋 Description  
+**gendiff** — это утилита для сравнения двух конфигурационных файлов (JSON, YAML).  
+Она показывает различия в удобном формате: *stylish*, *plain* или *JSON*.  
+  
+## 🚀 Installation  
+```bash  
+git clone https://github.com/zuperRuslana/frontend-project-46.git  
+cd frontend-project-46  
+npm install  
+npm link
+  
+Example work:  
+https://asciinema.org/a/aIrNxpwfO5HIHFCvCLhNQ95Cy
