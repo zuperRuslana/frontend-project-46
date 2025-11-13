@@ -24,7 +24,7 @@ test('make sure that files are checked properly',()=>{
     expect(genDiff(filepath1,filepath2)).toEqual(expected);
 })
 
-test ('make sure "stylish" formatter applied to a tree correctly', async() => {
+test ('make sure "stylish" formatter applied to a nested YAML tree correctly', async() => {
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = path.dirname(__filename);
   const filepath1 = path.join(__dirname, '..', '__fixtures__', 'nested1.yaml');
@@ -38,5 +38,21 @@ test ('make sure "stylish" formatter applied to a tree correctly', async() => {
     console.error('Error reading file:', err);
   }
   expect(genDiff(filepath1,filepath2)).toEqual(data);
+
+})
+
+test ('make sure "plain" formatter applied to a nested JSON tree correctly', async()=> {
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
+  const filepath1 = path.join(__dirname, '..', '__fixtures__', 'nested1.json');
+  const filepath2 = path.join(__dirname, '..', '__fixtures__', 'nested2.json');
+  const testFilePath = path.join(__dirname, 'expected_plain_nestedJson.txt');
+  let data;
+  try {
+     data = await fs.promises.readFile(testFilePath, 'utf8');
+  } catch (err) {
+    console.error('Error reading file:', err);
+  }
+  expect(genDiff(filepath1,filepath2, 'plain')).toEqual(data.trim());
 
 })
