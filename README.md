@@ -12,5 +12,11 @@ cd frontend-project-46
 npm install  
 npm link
   
-Example work:  
+Demo for stylish formatter:  
 https://asciinema.org/a/aIrNxpwfO5HIHFCvCLhNQ95Cy
+
+Demo for plain formatter:
+https://asciinema.org/a/uNOQuTUVxwGVpagy4gwrZcGFW
+
+Demo for json formatter:
+https://asciinema.org/a/ccAucH1USBSIthbyFbGFjfgVm
