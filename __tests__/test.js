@@ -12,16 +12,16 @@ test('make sure that files are checked properly',()=>{
     const filepath2 = path.join(__dirname, '..', '__fixtures__', 'file2.json');
 
     const expected = 
-    `{
-     - follow : false
-      host : hexlet.io
-     - proxy : 123.234.53.22
-     - timeout : 50
-     + timeout : 20
-     + verbose : true
+`{
+  - follow: false
+    host: hexlet.io
+  - proxy: 123.234.53.22
+  - timeout: 50
+  + timeout: 20
+  + verbose: true
 }`;
  
-    expect(genDiff(filepath1,filepath2)).toEqual(expected);
+    expect(genDiff(filepath1,filepath2)).toEqual(expected.trim());
 })
 
 test ('make sure "stylish" formatter applied to nested YAML files correctly', async() => {
@@ -37,7 +37,7 @@ test ('make sure "stylish" formatter applied to nested YAML files correctly', as
   } catch (err) {
     console.error('Error reading file:', err);
   }
-  expect(genDiff(filepath1,filepath2)).toEqual(data);
+  expect(genDiff(filepath1,filepath2)).toEqual(data.trim());
 
 })
 
