@@ -16,4 +16,8 @@ program
     console.log(diff);
 });
 
+if (process.argv.length === 2) {
+    program.help();  
+  }
+
 program.parse();
