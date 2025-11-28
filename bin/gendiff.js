@@ -12,6 +12,10 @@ program
 .argument('[filepath1]')
 .argument ('[filepath2]')
 .action((filepath1, filepath2, option)=>{
+    if(!filepath1 || !filepath2) {
+        console.log(program.help);
+        return
+    }
     const diff = genDiff(filepath1, filepath2, option.format);
     console.log(diff);
 });
