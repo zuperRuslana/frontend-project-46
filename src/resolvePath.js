@@ -1,11 +1,11 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
+import path from 'path'
+import { fileURLToPath } from 'url'
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
-export const resolvePath = (fp) =>{
-        return path.isAbsolute(fp) 
-        ? fp 
-        : path.resolve(__dirname,'..', '__fixtures__',fp)
-    }
+export const resolvePath = (fp) => {
+  return path.isAbsolute(fp)
+    ? fp
+    : path.resolve(__dirname, '..', '__fixtures__', fp)
+}
