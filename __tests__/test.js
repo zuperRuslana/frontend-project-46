@@ -31,7 +31,8 @@ test('make sure "stylish" formatter applied to nested YAML files correctly', asy
   let data
   try {
     data = await fs.promises.readFile(testFilePath, 'utf8')
-  } catch (err) {
+  } 
+  catch (err) {
     console.error('Error reading file:', err)
   }
   expect(genDiff(filepath1, filepath2)).toEqual(data.trim())
@@ -46,7 +47,8 @@ test('make sure "plain" formatter applied to nested JSON files correctly', async
   let data
   try {
     data = await fs.promises.readFile(testFilePath, 'utf8')
-  } catch (err) {
+  } 
+  catch (err) {
     console.error('Error reading file:', err)
   }
   expect(genDiff(filepath1, filepath2, 'plain')).toEqual(data.trim())
@@ -60,7 +62,8 @@ test('make sure "json" formatter applied to nested JSON files correctly', async 
   let data
   try {
     data = await fs.promises.readFile(testFilePath, 'utf8')
-  } catch (err) {
+  } 
+  catch (err) {
     console.error('Error reading file:', err)
   }
   expect(genDiff(filepath1, filepath2, 'json')).toEqual(data.trim())

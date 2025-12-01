@@ -7,7 +7,8 @@ export default function parse(filepath) {
   let ext = path.extname(filepath)
   if (ext === '.json') {
     return JSON.parse(content)
-  } else if (ext === '.yaml' || ext === '.yml') {
+  } 
+  else if (ext === '.yaml' || ext === '.yml') {
     return yaml.load(content)
   }
   throw new Error(`Unsupported file format: ${ext}`)
