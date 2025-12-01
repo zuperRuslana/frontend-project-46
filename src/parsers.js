@@ -7,7 +7,7 @@ export default function parse(filepath) {
   let ext = path.extname(filepath)
   if (ext === '.json') {
     return JSON.parse(content)
-  } 
+  }
   else if (ext === '.yaml' || ext === '.yml') {
     return yaml.load(content)
   }

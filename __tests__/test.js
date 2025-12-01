@@ -31,7 +31,7 @@ test('make sure "stylish" formatter applied to nested YAML files correctly', asy
   let data
   try {
     data = await fs.promises.readFile(testFilePath, 'utf8')
-  } 
+  }
   catch (err) {
     console.error('Error reading file:', err)
   }
@@ -47,7 +47,7 @@ test('make sure "plain" formatter applied to nested JSON files correctly', async
   let data
   try {
     data = await fs.promises.readFile(testFilePath, 'utf8')
-  } 
+  }
   catch (err) {
     console.error('Error reading file:', err)
   }
@@ -62,7 +62,7 @@ test('make sure "json" formatter applied to nested JSON files correctly', async 
   let data
   try {
     data = await fs.promises.readFile(testFilePath, 'utf8')
-  } 
+  }
   catch (err) {
     console.error('Error reading file:', err)
   }
