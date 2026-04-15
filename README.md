@@ -4,8 +4,8 @@
 
 ## 📋 Description
 
-**gendiff** — это утилита для сравнения двух конфигурационных файлов (JSON, YAML).  
-Она показывает различия в удобном формате: _stylish_, _plain_ или _JSON_.
+**gendiff** — a utility for comparing two configuration files (JSON, YAML).
+Shows the differences in a user-friendly format: stylish, plain, or JSON.
 
 ## 🚀 Installation
 
